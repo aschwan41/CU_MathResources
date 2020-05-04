@@ -1,0 +1,9 @@
+.courseSheet{
+  background: var(--offWhite);
+  border-radius: 10px 10px 0px 0px;
+  outline: transparent;
+  border:none;
+  grid-area: courseSheet;
+
+  padding: 3em;
+}

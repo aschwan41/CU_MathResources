@@ -1,0 +1,43 @@
+:root {
+  --offWhite: #FBEAEA;
+  --grey: #4D4D4D;
+  --boxShadow: rgba(0, 0, 0, 0.25);
+  --CarletonRed:red;
+}
+
+html,body{
+  background: var(--CarletonRed);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+button:focus{
+  outline: none;
+}
+
+.courseResources{
+  border: 3px solid var(--offWhite);
+  border-radius: 5px;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px var(--boxShadow);
+  grid-area:courseResources;
+
+  color: var(--offWhite);
+  text-align: center;
+}
+
+#body{
+  margin:3em 3em 0 5em;
+  display:grid;
+  background: var(--CarletonRed);
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 3em auto;
+  grid-template-areas: 
+  "courseSheet ChapterSelecter"
+  "courseSheet courseResources";
+  column-gap:3em;
+  row-gap: 1em;
+}
