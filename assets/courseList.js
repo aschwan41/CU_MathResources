@@ -9,8 +9,8 @@ const courseList = [
         file:"LHospitalRule.md",
       },
       {
-        title:"L'Hospital's Rule 2",
-        file:"LHospitalRule2.md",
+        title:"Limits",
+        file:"Limits.md",
       },
     ]
   },

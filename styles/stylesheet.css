@@ -7,6 +7,7 @@
 
 html,body{
   background: var(--CarletonRed);
+  height:100vh;
 }
 
 *{
@@ -30,7 +31,10 @@ button:focus{
 }
 
 #body{
-  margin:3em 3em 0 5em;
+  position: absolute;
+  bottom:0px;
+  top:3em;
+  padding:0 3em 0 5em;
   display:grid;
   background: var(--CarletonRed);
   grid-template-columns: 3fr 1fr;
@@ -40,4 +44,5 @@ button:focus{
   "courseSheet courseResources";
   column-gap:3em;
   row-gap: 1em;
+
 }
