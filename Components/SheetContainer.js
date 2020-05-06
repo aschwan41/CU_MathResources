@@ -1,5 +1,4 @@
 import {CourseContext} from "./courseContext"
-import ReactMarkdown from 'react-markdown';
 import MathJax from 'react-mathjax';
 import RemarkMathPlugin from 'remark-math';
 
