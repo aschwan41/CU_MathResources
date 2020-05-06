@@ -5,12 +5,20 @@ const courseList = [
     desc: "MATH1004.md",
     chapters:[
       {
-        title:"L'Hospital's Rule",
-        file:"LHospitalRule.md",
-      },
-      {
         title:"Limits",
         file:"Limits.md",
+      },
+      {
+        title:"Differentiation",
+        file:"Differentiation.md",
+      },
+      {
+        title:"Derivatives for Trigs and Inverse Functions",
+        file:"Derivatives_Trig_Inverse.md",
+      },
+      {
+        title:"L'Hospital's Rule",
+        file:"LHospitalRule.md",
       },
     ]
   },
