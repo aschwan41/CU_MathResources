@@ -4,7 +4,7 @@
 
 ------
 
-This website is meant to be an study supplement for Carleton University students taking Math Courses. The website will start off with only Engineering math course material, however will grow to include other courses should I get feedback that this is a valuable resource. 
+This website is meant to be an study supplement for Carleton University students taking Math Courses. It does not contain actual study material, but it does contain notes on the math topics that may help you in understanding the individual math topics. I will assume that you have already taken lectures/classes on each topic and just want to understand the concepts in a less "math classy" way.
 
 I do not promise that all the study material is of my own work. If it is not, you will clearly find that the material is a link to a third party source, or you will find the credits to contributing authors at the bottom of the document. Citations will not be in the main content of any file as the main focus of this website is to provide a study supplement for you!
 
