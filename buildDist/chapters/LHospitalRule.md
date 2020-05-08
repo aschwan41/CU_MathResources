@@ -34,5 +34,5 @@ $$
 $$
 4. Check to see if limit is indeterminate, repeat process if limit is still indeterminate
 
-
+As a TA, this is as far as I recommend students go. However, if you want to understand why it works, [visit this qoura page.](https://www.quora.com/What-is-an-intuitive-explanation-of-lHopitals-Rule)
 
