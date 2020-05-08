@@ -20,6 +20,10 @@ const courseList = [
         title:"L'Hospital's Rule",
         file:"LHospitalRule.md",
       },
+      {
+        title:"Definite and Indefinite Integrals",
+        file:"integrals.md",
+      },
     ]
   },
 ]
