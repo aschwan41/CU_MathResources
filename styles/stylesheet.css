@@ -2,7 +2,7 @@
   --offWhite: #FBEAEA;
   --grey: #4D4D4D;
   --boxShadow: rgba(0, 0, 0, 0.25);
-  --CarletonRed:red;
+  --CarletonRed:rgb(255, 56, 56);
 }
 
 html,body{
