@@ -2,7 +2,6 @@ import React from 'react';
 import 'katex/dist/katex.min.css';
 import { InlineMath, BlockMath } from 'react-katex';
 import RemarkMathPlugin from "remark-math";
-
 function MarkdownRender(props) {
     const newProps = {
         ...props,
@@ -16,7 +15,7 @@ function MarkdownRender(props) {
         }
     };
     return (
-        <ReactMarkdown {...newProps} />
+        <ReactMarkdown {...newProps} escapeHtml={false}/>
     );
 };
 
