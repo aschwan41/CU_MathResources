@@ -6,7 +6,7 @@ The site is broken up to courses and chapters, a course is selected via the left
 
 *Why is it done this way?*
 
-##### Because we might bring on different course codes that teach part of the same material, such as a calculus for engineering, and a calculus for business. Each of the different course codes can point to the same "calculus" chapters.
+**Because we might bring on different course codes that teach part of the same material, such as a calculus for engineering, and a calculus for business. Each of the different course codes can point to the same "calculus" chapters.**
 
 Contributions are welcome! Here is the *two* main sections for contribution:
 
@@ -25,6 +25,6 @@ The main reason why reducing bandwidth is important is because I am also a stude
 
 Any content for any course is welcome to contribution. However, as bandwidth is the primary constraint, I ask everyone to write the chapters in plain text using the markdown format. PDFs and word documents are wonderful, but they would eat my data cap alive. 
 
-To contribute,  simply write a chapter in markdown format, and submit a pull request. If you want to append the chapter information into the course courseList.js feel free to do so. If you are experienced in GitHub, but still want to help out, please send a email to thomasshih@cmail.carleton.ca with your markdown file and I can add it on for you!
+To contribute,  simply write a chapter in markdown format, and submit a pull request. If you want to append the chapter information into the course courseList.js feel free to do so. If you are not experienced in GitHub, but still want to help out, please send a email to thomasshih@cmail.carleton.ca with your markdown file and I can add it on for you!
 
 As for how to create a markdown file, I recommend using [Typora](https://typora.io/). As markdown files are essentially code, Typora can asset you in visualizing what your document looks like.
