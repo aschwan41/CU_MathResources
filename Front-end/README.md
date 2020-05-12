@@ -8,12 +8,12 @@ The site is broken up to courses and chapters, a course is selected via the left
 
 **Because we might bring on different course codes that teach part of the same material, such as a calculus for engineering, and a calculus for business. Each of the different course codes can point to the same "calculus" chapters.**
 
-Contributions are welcome! Here is the *two* main sections for contribution:
+Contributions are welcome! Please indicate what you are working on in the "issues" page once you start working on something. Just assign a new issue to yourself and use the apporiate labels. Before starting work on contributions, please visit the "issues" page to see if someone else is already working on the feature/chapter.
+
+Here is the *two* main sections for contribution:
 
 1. Coding and development.
 2. Writing new course content
-
-
 
 ## 1. Coding and Development
 
