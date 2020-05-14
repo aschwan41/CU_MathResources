@@ -1,11 +1,14 @@
 import {CourseContext} from "./courseContext"
 
-function CourseButton({data}){
+function CourseButton({data,callback}){
   const {courseID,setCourseID} = React.useContext(CourseContext)
   const id = `${data.subject}${data.code}`
   return(
     <div>
-      <button onClick={() => {setCourseID(id)}}
+      <button onClick={() => {
+        setCourseID(id)
+        callback()
+      }}
               className={`courseName ${id == courseID? "is-active":""}`}>
         {id}
       </button>
@@ -24,7 +27,7 @@ function Navbar(){
   },[])
 
   React.useEffect(() => {
-    setCourses(data.map(courseInfo => <CourseButton key={courseInfo.code} data={courseInfo}/>))
+    setCourses(data.map(courseInfo => <CourseButton key={courseInfo.code} data={courseInfo} callback={toggleNavbar}/>))
   },[data])
 
   return(
