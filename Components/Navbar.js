@@ -1,13 +1,13 @@
-import courseList from "../assets/courseList"
 import {CourseContext} from "./courseContext"
 
 function CourseButton({data}){
-  const {courseID,switchCourse} = React.useContext(CourseContext)
+  const {courseID,setCourseID} = React.useContext(CourseContext)
+  const id = `${data.subject}${data.code}`
   return(
     <div>
-      <button onClick={() => switchCourse(data.id)}
-              className={`courseName ${data.id == courseID? "is-active":""}`}>
-        {data.courseCode}
+      <button onClick={() => {setCourseID(id)}}
+              className={`courseName ${id == courseID? "is-active":""}`}>
+        {id}
       </button>
     </div>
   )
@@ -16,8 +16,16 @@ function CourseButton({data}){
 function Navbar(){
   const [active,setActive] = React.useState(false)
   const toggleNavbar = () => {setActive(currentlyActive => !currentlyActive)}
+  const [data,setData] = React.useState([])
+  const [courses,setCourses] = React.useState([])
 
-  const courses = courseList.map(courseInfo => <CourseButton key={courseInfo.id} data={courseInfo}/>)
+  React.useEffect(() => {
+    fetch("http://thomasshih.pythonanywhere.com/db/").then(response => response.json()).then(data => {setData(data)})
+  },[])
+
+  React.useEffect(() => {
+    setCourses(data.map(courseInfo => <CourseButton key={courseInfo.code} data={courseInfo}/>))
+  },[data])
 
   return(
     <div className={`Navbar ${active? "is-active":""}`}>
