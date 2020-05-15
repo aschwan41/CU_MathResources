@@ -23,7 +23,7 @@ function Navbar(){
   const [courses,setCourses] = React.useState([])
 
   React.useEffect(() => {
-    fetch("http://thomasshih.pythonanywhere.com/db/").then(response => response.json()).then(data => {setData(data)})
+    fetch("https://thomasshih.pythonanywhere.com/db/").then(response => response.json()).then(data => {setData(data)})
   },[])
 
   React.useEffect(() => {

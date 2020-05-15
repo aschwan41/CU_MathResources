@@ -20,7 +20,7 @@ function CourseContextProvider(props) {
       return
     }else{
       console.log(sheetKey)
-      fetch(`http://thomasshih.pythonanywhere.com/db/md/${sheetKey}/`).then(response => response.json()).then(data => {setSheetData(data.markdownString)})
+      fetch(`https://thomasshih.pythonanywhere.com/db/md/${sheetKey}/`).then(response => response.json()).then(data => {setSheetData(data.markdownString)})
     }
   },[sheetKey])
 
@@ -35,7 +35,7 @@ function CourseContextProvider(props) {
     }else{
       const subject = courseID.slice(0,4)
       const code = courseID.slice(4,8)
-      fetch(`http://thomasshih.pythonanywhere.com/db/course/${subject}/${code}/`).then(response => response.json()).then(data => {setCourseData(data)})
+      fetch(`https://thomasshih.pythonanywhere.com/db/course/${subject}/${code}/`).then(response => response.json()).then(data => {setCourseData(data)})
     }
   },[courseID])
 
